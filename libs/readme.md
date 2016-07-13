@@ -1,0 +1,1 @@
+## We need craftbukkit.jar here.

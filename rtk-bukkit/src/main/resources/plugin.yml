@@ -1,0 +1,28 @@
+name: RemoteToolkitPlugin
+main: co.ryred.mcrkit.bukkit.plugin.RTKPlugin
+version: ${pom.version}
+website: http://ryred.co
+authors:
+  - drdanick
+  - Cory Redmond
+description: >
+             The plugin component of the Minecraft Remote Toolkit suite.
+commands:
+  holdsrv:
+    description: Holds the server.
+  kickall:
+    description: Kicks all players in the server on a restart. Only works from the console.
+  kickallhold:
+    description: Kicks all players in the server on a server hold. Only works from the console.
+  kickallstop:
+    description: Kicks all players in the server on a wrapper shutdown. Only works from the console.
+  restartsrv:
+    description: Restarts the server.
+  reschedulerestart:
+    description: Reschedules the next restart time.
+  stopwrapper:
+    description: Stop both the server and the Toolkit.
+  RTPING:
+    description: Requests a pong response from the plugin. (Console only)
+  rtkunicodetest:
+    description: Test toolkit unicode support.

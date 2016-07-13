@@ -1,0 +1,4 @@
+main: co.ryred.mcrkit.bungee.RTKPlugin
+version: ${pom.version}
+author: Cory Redmond
+name: BungeeRTK
