@@ -43,6 +43,7 @@
     <artifactId>RTKPlugin</artifactId>
     <packaging>pom</packaging>
     <version>3.0</version>
+    
     <modules>
         <module>rtk-bukkit</module>
         <module>rtk-bungee</module>
@@ -50,10 +51,10 @@
     </modules>
 
     <properties>
-    <versions.java>1.8</versions.java>
-    <versions.bukkit>1.10-R0.1-SNAPSHOT</versions.bukkit>
-    <versions.bungee>1.10-SNAPSHOT</versions.bungee>
-  </properties>
+      <versions.java>1.8</versions.java>
+      <versions.bukkit>1.10-R0.1-SNAPSHOT</versions.bukkit>
+      <versions.bungee>1.10-SNAPSHOT</versions.bungee>
+    </properties>
 
     <developers>
         <developer>
@@ -65,10 +66,17 @@
         </developer>
     </developers>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.8</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
     <build>
-
         <defaultGoal>clean package</defaultGoal>
-
         <plugins>
             <plugin>
                 <inherited>true</inherited>
@@ -92,16 +100,6 @@
                 </configuration>
             </plugin>
         </plugins>
-
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.8</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 
 </project>
